@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portifólio</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Karla&display=swap">
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#sobre">Sobre Mim</a></li>
+                <li><a href="#contato">Contato</a></li>
+                <li><a href="#relatorios">Relatórios</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="sobre">
+        <h1>Sobre Mim</h1>
+        <div class="foto-container">
+            <img src="https://avatars.githubusercontent.com/u/10983643?s=280&v=4" alt="Logo da Faculdade" class="foto">
+            <img src="minhaFoto.jpg" alt="Minha Foto" class="foto">
+        </div>
+        <p>Olá! Meu nome é <strong> Juliana Furlan</strong>  e sou estudante de Ciência da Computação, curso no qual ingressei em 2024 na UniFil. Para mim, programar vai muito além de apenas escrever códigos—é uma forma de expressão e criatividade, onde cada linha pode dar vida a algo novo e funcional. Além disso, a computação me permite desenvolver um raciocínio lógico mais apurado e trabalhar com desafios que exigem pensamento estratégico.. Aqui, compartilho meus relatórios e materiais, registrando minha trajetória e aprendizados ao longo da minha jornada na computação.</p>
+    </section>
+
+    <section id="contato">
+        <h2>Contato</h2>
+        <form action="https://formspree.io/f/meoqorbn" method="POST">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+    
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+    
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+    
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <section id="relatorios">
+        <h2>Inserir Relatório</h2>
+        <form id="formRelatorio">
+            <label for="titulo">Título do Relatório:</label>
+            <input type="text" id="titulo" name="titulo" required>
+    
+            <label for="descricao">Descrição da Atividade:</label>
+            <textarea id="descricao" name="descricao" rows="4" required></textarea>
+    
+            <button type="submit">Inserir Relatório</button>
+            <button type="button" id="apagarUltimo">Deletar Último Relatório</button>
+        </form>
+    
+        <h2>Relatórios Inseridos</h2>
+        <ul id="listaRelatorios"></ul>
+    </section>
+
+
+    
+    
+</body>
+</html>
